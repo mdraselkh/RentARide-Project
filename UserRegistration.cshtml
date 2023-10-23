@@ -1,0 +1,92 @@
+﻿
+@{
+    ViewBag.Title = "LoginRegistration";
+}
+
+<div class="container log-reg-container mt-5">
+    <h1 class="fw-bold text-center">LOGIN & REGISTRATION</h1>
+    <hr />
+    <div class="row gx-5 gy-3">
+        <div class="col-md-4">
+            <div class="login d-flex flex-column justify-content-center align-items-center">
+                <h4>Existing Members?</h4>
+                <h6>Log in here</h6>
+
+                <form action="/User/userLogIn" method="post">
+                    <div class="my-2">
+                        <label for="Email" class="form-label">EMAIL ADDRESS: </label>
+                        <input type="email" class="form-control" id="Email" name="userEmail" required>
+                    </div>
+                    <div class="my-2">
+                        <label for="Password" class="form-label">PASSWORD: </label>
+                        <input type="password" class="form-control" id="Password" name="userPassword" required>
+                    </div>
+                    <div class="my-4">
+                        <button type="submit" class="logReg-btn">LOG ME IN</button>
+                    </div>
+                    <div class="col-12 my-2">
+                        <label class="fw-bold fs-4 text-danger"> @ViewBag.logError</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="Registration d-flex flex-column justify-content-center align-items-center">
+
+                <h5 class="fw-bold">Create your account by completing the short registration form below.</h5>
+
+                <form action="/User/UserRegistration" method="post" class="row">
+                    <div class="col-md-6 my-2">
+                        <label for="Name" class="form-label">NAME: </label>
+                        <input type="text" class="form-control" id="Name" name="userName" required>
+                    </div>
+                    <div class="col-md-6 my-2">
+                        <label for="regEmail" class="form-label">EMAIL ADDRESS:</label>
+                        <input type="email" class="form-control" id="regEmail" name="userEmail" required>
+                    </div>
+                    <div class="col-md-6 my-2">
+                        <label for="regMobile" class="form-label">MOBILE NUMBER:</label>
+                        <input type="text" class="form-control" id="regMobile" name="userPhone" required>
+                    </div>
+                    <div class="col-md-6 my-2">
+                        <label for="nid" class="form-label">NID NUMBER:</label>
+                        <input type="text" class="form-control" id="nid" name="userNID" required>
+                    </div>
+                    <div class="col-12 my-2">
+                        <label for="Address" class="form-label">ADDRESS:</label>
+                        <input type="text" class="form-control" id="Address" name="userAddress" required>
+                    </div>
+                    <div class="col-md-6 my-2">
+                        <label for="city" class="form-label">CITY:</label>
+                        <select class="form-select" aria-label="Default select example" name="userCity" required>
+                            <option selected>CHOOSE CITY</option>
+                            <option value="Dhaka">DHAKA</option>
+                            <option value="Chitagong">CHITAGONG</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 my-2">
+                        <label for="Password" class="form-label">ENTER PASSWORD:</label>
+                        <input type="password" class="form-control" id="Password" name="userPassword" required>
+                    </div>
+                    <div class="col-12 my-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                            <label class="form-check-label" for="gridCheck">
+                                I AGREE TO THE <span class="fst-italic fw-bold">RENT A RIDE</span> TERMS AND CONDITIONS.
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12 my-2">
+                        <button type="submit" class="logReg-btn">SIGN ME UP</button>
+                    </div>
+                    <div class="col-12 my-2">
+                        <label class="fw-bold fs-4 text-success"> @ViewBag.RegSuccess</label>
+                    </div>
+                </form>
+
+               
+            </div>
+        </div>
+    </div>
+</div>
+

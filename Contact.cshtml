@@ -1,0 +1,90 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+
+<head>
+    <link rel="stylesheet" href="@Url.Action("/Content/contactStyle.css")" />
+   
+</head>
+
+
+
+<section>
+
+    <div id="section-contact" class="heading-block title-center page-section">
+        <h2 style="text-align:center;"><span>Contact Us</span></h2>
+    </div>
+
+    <!-- Contact Form -->
+   
+    <div class="fancy-title">
+        <h5>Get in touch with our customer support team. Please fill in the form given below. We aim to reply in less than 1 working day.</h5>
+    </div>
+
+
+
+    <div class="row gx-5 gy-3">
+        <div class="col-md-4"  style="margin-top:100px; border: 1px solid #4cff00; background-color:cadetblue">
+            <div class=" d-flex flex-column justify-content-center align-items-center">
+                
+
+                <form action="/User/UserRegistration" method="post" class="row">
+                    <div class="col-md-12 my-2">
+                        <label for="Name" class="form-label">YOUR NAME: </label>
+                        <input type="text" class="form-control" id="Name" name="userName" required>
+                    </div>
+                    <div class="col-md-12 my-2">
+                        <label for="regEmail" class="form-label">YOUR EMAIL ADDRESS:</label>
+                        <input type="email" class="form-control" id="regEmail" name="userEmail" required>
+                    </div>
+                    
+                    <div class="col-12 my-2">
+                        <label for="Address" class="form-label">YOUR ADDRESS:</label>
+                        <input type="text" class="form-control" id="Address" name="userAddress" required>
+                    </div>
+                    
+                    <div class="col-md-12 my-2">
+                        <label for="Password" class="form-label">YOUR MESSAGE:</label>
+                        <input type="text" class="form-control" id="Password" name="userPassword" required style="height:200px;">
+                    </div>
+                   
+                    <div class="col-12 my-2">
+                        <button type="submit" class="logReg-btn">SUBMIT</button>
+                    </div>
+                   
+                </form>
+            </div>
+        </div>
+        <div class="col-md-7" style="margin-top:110px;">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+
+                <div class="col_half col_last">
+                    <div class="fancy-title">
+                        <h5>We are here to solve your all kind of car rental solutions.  Please drop your query; Our dedicated customer support team will get back to you.</h5>
+                    </div>
+
+                    <div id="navcontainer">
+                        <ul>
+                            <li><i class="icon-tasks"></i><b>Facebook Page:</b> &nbsp; <a href="https://www.rentaride.com/RENTARIDE.com.bd" target="_blank">www.facebook.com/RENTARIDE.com.bd</a></li>
+                            <li><i class="icon-mail"></i><b>Email:</b> &nbsp; info@rentaride.com.bd</li>
+                            <li><i class="icon-phone-sign"></i><b>Call Us:</b> &nbsp; +88 09611 11111111 (Customer Care)</li>
+                            <li><i class="icon-tablet2"></i><b>SMS/Viber/WhatsApp:</b> &nbsp; +8801811030XXX or +8801711030XXX</li>
+
+                            <li><i class="icon-home"></i><b>Registered Address:</b> &nbsp; Dhaka 1216, Bangladesh.</li>
+
+                        </ul>
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+        <!-- Contact Form End -->
+        
+       </div>
+
+</section>

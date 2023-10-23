@@ -1,0 +1,124 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<header id="Home">
+    <div class="container">
+        <div class="bg-image home-content" style="background-image: url( '@Url.Content("~/Content/images/header-image-1.jpg")');
+          background-size: cover;
+          border-radius: 10px;
+          background-repeat: no-repeat;
+          background-position: center;
+          min-height: 60vh;">
+            <h4>Fast & Easy Way To Rent A Car</h4>
+        </div>
+    </div>
+</header>
+
+<section id="service" class="service-container">
+    <div class="container">
+        <h4>What We Offer</h4>
+        <h2>Our Services</h2>
+        <div class="row g-1">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="service-content">
+                    <img src="@Url.Content("~/Content/images/airport-drop-off.jpg")" />
+                    <h5>Airport Service</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="service-content">
+                    <img src="@Url.Content("~/Content/images/service-2.jpg")" />
+                    <h5>Hourly Rent</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="service-content">
+                    <img src="@Url.Content("~/Content/images/service-3.jpg")" />
+                    <h5>Weekly Subscription</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="service-content">
+                    <img src="@Url.Content("~/Content/images/service-4.png")" />
+                    <h5>Monthly Subscription</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="car-register-container">
+    <div class="container">
+        <h5>Rent Your Car With Us</h5>
+        <h2>Make Money From Your Car</h2>
+        <div class="bg-image home-content" style="background-image: url( '@Url.Content("~/Content/images/service-3.jpg")');
+          background-size: cover;
+          border-radius: 10px;
+          background-repeat: no-repeat;
+          background-position: center;
+          min-height: 60vh;">
+            <h4>Do You Want To Earn With Us?</h4>
+            @Html.ActionLink("REGISTER YOUR CAR", "CarOwnerRegistration", "carOwner")
+        </div>
+    </div>
+</section>
+
+
+<section class="why-us">
+    <div class="container">
+        <h4>Our Features</h4>
+        <h2>Why Choose Us</h2>
+        <div class="row g-2">
+            <div class="col-lg-4 col-md-6 ">
+                <div class="why-content d-flex justify-content-center align-items-center flex-column">
+                    <img class="my-3" src="@Url.Content("~/Content/images/why-1.png")" />
+                    <h4 class="fw-bold">WE OFFER AFFORDABLE PRICE</h4>
+                    <p class="text-muted">
+                        If you hire a car from Rent A Ride which would be affordable for you because there is no hidden charges. We are open to our clients.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 ">
+                <div class="why-content d-flex justify-content-center align-items-center flex-column">
+                    <img class="my-3" src="@Url.Content("~/Content/images/why-2.png")" />
+                    <h4 class="fw-bold">DEDICATED SUPPORT</h4>
+                    <p class="text-muted">
+                        Rent A Ride driver will provide you the faithful support. They always have been committed to you. You can use the driver as you need.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="why-content d-flex justify-content-center align-items-center flex-column">
+                    <img class="my-3" src="@Url.Content("~/Content/images/why-3.png")" />
+                    <h4 class="fw-bold">ENSURE SECURITY</h4>
+                    <p class="text-muted">
+                        Rent A Ride always try to ensure top security for the passengers. For ensuring security we always track the vehicle by using devices across the country.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="banner">
+    <div class="container">
+        <div class="bg-image home-content" style="background-image: url( '@Url.Content("~/Content/images/banner.jpg")');
+          background-size: cover;
+          border-radius: 10px;
+          background-repeat: no-repeat;
+          background-position: center;
+          min-height: 70vh;">
+           <div class="banner-content">
+               <h3 class="fw-bolder">
+                   Welcome To The <span>Rent A Ride</span>
+               </h3>
+               <p>
+                   Rent A Ride is popular in Bangladesh for quality service. We are offering a wide range of vehicle e.g. cars, micro bus, 
+                   and commercial vehicles for rent. Whether you are a traveler, planning a trip, Rent A Ride has the right vehicle 
+                   choice for you.
+               </p>
+           </div>
+        </div>
+    </div>
+</section>
